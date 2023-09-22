@@ -22,7 +22,7 @@ db.query(sql, (err, row) => {
 });
 ```
 
-`row` parameter is an array with an object inside, so we need one row for fetch array element that is an object
+`row` parameter is an array with an object inside, so we need one row to fetch array element that is an object
 
 ```
 db.query(sql, (err, row) => {
