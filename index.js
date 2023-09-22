@@ -68,10 +68,6 @@ app.get("/:id/edit", (req, res) => {
   db.query(sql, (err, row) => {
     if (err) throw err;
 
-    if (row.length === 0) {
-      return res.status(404).send("Kontak tidak ditemukan.");
-    }
-
     const kontak = row[0];
     res.render("edit.ejs", { kontak });
   });
